@@ -45,6 +45,8 @@ public class EmpController {
 		
 		logger.debug("get emp details by name:{}",name);
 		
+		logger.debug("changes in emp-clone");
+		
 		Emp emp =empService.getEmpByName(name);
 		EmpResponse res =new EmpResponse();
 		res.setEmpRes(emp);
